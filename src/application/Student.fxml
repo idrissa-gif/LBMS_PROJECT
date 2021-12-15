@@ -2,21 +2,17 @@
 
 <?import com.jfoenix.controls.JFXDrawer?>
 <?import com.jfoenix.controls.JFXHamburger?>
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.ToolBar?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" focusTraversable="true" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <VBox layoutX="187.0" layoutY="3.0" minHeight="-Infinity" prefHeight="15.0" prefWidth="1844.0">
+      <VBox layoutY="3.0" minHeight="-Infinity" prefHeight="15.0" prefWidth="2031.0">
          <children>
-            <MenuBar prefHeight="25.0" prefWidth="1828.0" VBox.vgrow="ALWAYS">
+            <MenuBar prefHeight="25.0" prefWidth="1914.0" VBox.vgrow="ALWAYS">
               <menus>
                 <Menu mnemonicParsing="false" text="Search">
                   <items>
@@ -36,26 +32,8 @@
             </MenuBar>
          </children>
       </VBox>
-      <JFXDrawer prefHeight="866.0" prefWidth="189.0" style="-fx-background-color: #808089;">
-         <children>
-            <VBox prefHeight="866.0" prefWidth="113.0">
-               <children>
-                  <ImageView fitHeight="51.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images.png" />
-                     </image>
-                     <VBox.margin>
-                        <Insets left="60.0" top="20.0" />
-                     </VBox.margin>
-                  </ImageView>
-               </children>
-            </VBox>
-         </children>
-      </JFXDrawer>
-      <ToolBar layoutX="196.0" layoutY="33.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="45.0">
-         <items>
-            <JFXHamburger />
-         </items></ToolBar>
+      <JFXDrawer fx:id="LeftDrawer" layoutY="19.0" prefHeight="866.0" prefWidth="189.0" />
+      <JFXHamburger fx:id="SlidingHamburger" layoutX="544.0" layoutY="69.0" />
    </children>
 
 </AnchorPane>
